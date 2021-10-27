@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro GDEZ - EDU</title>
+    <!-- Link de estilo do Header -->
+    <!-- Link de estilo do Footer -->
+    <!-- Link de estilo do formulário -->
+    <link rel="stylesheet" href="css/register-styles.css">
+    <link rel="stylesheet" href="css/register-animation-styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- CDN para ativar o Jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c5f2ab1cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="barAcess">
+        <img src="img/Group 8.svg" onclick="fonte('a')">
+        <img src="img/Group 9.svg" onclick="fonte('d')">
+    </div>
+    <header class="barMenu">
+        <div id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img id="logoMobile" src="img/logo-mobile.png" alt="">
+            <img id="logoDesk" src="img/logo.png" alt="logo">
+        </div>
+        <nav id="nav">
+
+            <ul id="menu">
+                <a href="index.html">
+                    <li class="acess">Sobre nós</li>
+                </a>
+                <a href="index.html">
+                    <li class="acess">Processo</li>
+                </a>
+                <a href="#">
+                    <li class="acess">Contato</li>
+                </a>
+                <a href="calculadora.html">
+                    <li class="acess">Playteca</li>
+                </a>
+
+            </ul>
+            <a href="poo.html"><input type="button" id="btnSolicite" value="Solicite sua box"></a>
+        </nav>
+    </header>
+    <!-- espaço para o head -->
+    <div class="body">
+        <main class="container">
+            <form onsubmit="return false;">
+                <img src="img/Hello-rafiki.svg" class="img-responsive">
+                <div class="title">
+                    <h1>Bem-vindo(a) à GDEZ.EDU!</h1>
+                    <p>Você já possui alguma conta? <a href="#">Login</a></p>
+                </div>
+
+                <div class="disp-flex">
+                    <div class="inputs">
+                        <input type="text" id="nome" name="nome" required />
+                        <label for="nome">Nome:</label>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" id="lastnome" name="nome" required />
+                        <label for="nome">Sobrenome:</label>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <input type="email" id="email" name="email" required />
+                    <label for="email">E-mail:</label>
+                    <span class="error"></span>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="cpf" name="cpf" required maxlength="11" onchange="isValidCPF()" />
+                    <label for="cpf">CPF:</label>
+                    <span class="error"></span>
+                </div>
+                <div class="disp-flex">
+                    <div class="inputs">
+                        <input type="date" id="date" name="date" onchange="isValidData()" />
+                        <label for="email">Data de Nascimento:</label>
+                        <span class="error"></span>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="cep" name="cep" required maxlength="9"
+                            onblur="pesquisacep(this.value);" />
+                        <label for="cep">CEP:</label>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="logradouro" name="logradouro" required />
+                    <label for="logradouro">Rua:</label>
+                    <span class="error"></span>
+                </div>
+                <div class="inputs">
+                    <input type="text" id="bairro" name="bairro" required />
+                    <label for="bairro">Bairro:</label>
+                    <span class="error"></span>
+                </div>
+                <div class="disp-flex">
+                    <div class="inputs">
+                        <input type="text" id="localidade" name="localidade" required />
+                        <label for="localidade">Cidade:</label>
+                        <span class="error"></span>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="uf" name="uf" required />
+                        <label for="uf">Cidade:</label>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="submit-btn" id="btn"> Registro </button>
+                    <button type="reset" class="reset-btn"> Limpar Dados</button>
+                </div>
+
+            </form>
+            <div id="modal-promocao" class="modal-container">
+                <!--início do popup-->
+                <div class="modal-content">
+                    <button class="btn-closed">X</button>
+                    <h1>Olá, <span class="clientname"></span>! Obrigado por escolher a GDEZ.EDU</h1>
+                    <p>Você está a um passo de receber a <strong class="strong">melhor experiência</strong> para o
+                        <strong class="strong">desenvolvimento do seu filho(a)</strong></p>
+                    <P>Para Acessar sua conta use:</P>
+                    <p><span class="login"></span> para <strong class="strong">Login</strong> e <span
+                            class="password"></span> como <strong class="strong">Senha.</strong></P>
+                </div>
+                <!--Fim do popup-->
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="part1">
+            <h3>Experiências Incríveis e Criativas</h3>
+            <p class="acess">
+               Siga Nossas Redes Sociais 
+            </p>
+            <div class="icones">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="#">
+                        <li>
+                            Politica de Privacidade
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Termos e Condições
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Suporte
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="part2">
+            <h3>Receba Nossas Atualizações</h3>
+            <p class="acess">
+                Insira seu email e receba nossas atualizações promoções.
+            </p>
+            <label for="email">
+                Email:
+            </label>
+            <div class="subscribe">
+                <input type="email" placeholder="exemplo@mail.com">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="js/acessibilidade.js"></script>
+    <!-- script de validação do formulário -->
+    <script type="text/javascript" src="js/registration-script.js"></script>
+
+    <!-- script da API - validaCEP -->
+    <!-- <script type="text/javascript" src="cep-validation.js" tar></script> -->
+</body>
+
+</html>

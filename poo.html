@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDEZ.EDU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/poo.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/7c5f2ab1cd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script type="text/javascript" src="js/poo.js" async></script>
+</head>
+
+<body onload="pedido.limpar()">
+    <div class="barAcess">
+        <img src="img/Group 8.svg" onclick="fonte('a')">
+        <img src="img/Group 9.svg" onclick="fonte('d')">
+    </div>
+    <header class="barMenu">
+        <div id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img id="logoMobile" src="img/logo-mobile.png" alt="logoMobile">
+            <img id="logoDesk" src="img/logo.png" alt="logo">
+        </div>
+        <nav id="nav">
+            <ul id="menu">
+                <a href="index.html">
+                    <li class="acess">Sobre nós</li>
+                </a>
+                <a href="index.html">
+                    <li class="acess">Processo</li>
+                </a>
+                <a href="#">
+                    <li class="acess">Contato</li>
+                </a>
+                <a href="calculadora.html">
+                    <li class="acess">Playteca</li>
+                </a>
+
+            </ul>
+            <a href="poo.html"><input type="button" id="btnSolicite" value="Solicite sua box"></a>
+        </nav>
+    </header>
+    <div class="body">
+        <main>
+            <section class="banner-Container">
+                <div class="cardBanner">
+                    <h2>Trimestral</h3>
+                        <span>A partir de</span>
+                        <h3>$135
+                    </h2>
+                </div>
+                <div class="cardBanner1">
+                    <h2>Mensal</h3>
+                        <span>A partir de</span>
+                        <h3>$50
+                    </h2>
+                </div>
+                <div class="cardBanner">
+                    <h2>Anual</h3>
+                        <span>A partir de</span>
+                        <h3>$500
+                    </h2>
+                </div>
+            </section>
+            <section>
+                <h1>
+                    Selecione a box desejada:
+                </h1>
+                <div class="box-Container">
+                    <div class="boxItem">
+                        <img class="boxImage" src="img/Going offline-amico.png">
+                    </div>
+                    <div class="boxItem">
+                        <img class="boxImage" src="img/Going offline-amico2.png">
+                    </div>
+                    <div class="boxItem">
+                        <img class="boxImage" src="img/Webinar-amico.png">
+                    </div>
+                </div>
+                <div class="radio-Container">
+                    <input type="radio" id="Box1" name="selecBox" value="Box 1">
+                    <input type="radio" id="Box2" name="selecBox" value="Box 2">
+                    <input type="radio" id="Box3" name="selecBox" value="Box 3">
+                </div>
+                <div class="inputs-Container">
+
+                    <div class="NomePlano-Container">
+                        <div class="inputs">
+
+                            <input type="text" id="nomeFilho" required></input>
+                            <label>Nome do Filho</label>
+                        </div>
+                        <div class="inputs">
+                            <!--Seletor de estados com select para caixa-->
+
+                            <select id="plano" name="planosDisp" required>
+                                <option value="Mensal">Mensal</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Anual">Anual</option>
+                            </select>
+                            <label for="plano">Plano:</label>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="mensagem" required></input>
+                        <label>Mensagem</label>
+
+                    </div>
+                </div>
+                <div class="btn-Container">
+                    <button id="btn1" onclick="pedido.salvar()">Salvar</button>
+                    <button id="btn2" onclick="pedido.limpar()">Limpar</button>
+                </div>
+            </section>
+            <section class="tabela-Container">
+                <h2 class="center">
+                    Lista de Pedidos
+                </h2>
+                <table border=1>
+                    <thead>
+                        <!-- <th class="center">ID</th> -->
+                        <th>Ações</th>
+                        <th>Nome do Filho</th>
+                        <th>Box</th>
+                        <th>Plano</th>
+                        <th>Mensagem</th>
+                        <th>Preço</th>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+                <button id="prosseguirBtn" onclick="abrirFormulario()">Prosseguir</button>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="part1">
+            <h3>Experiências Incríveis e Criativas</h3>
+            <p class="acess">
+               Siga Nossas Redes Sociais 
+            </p>
+            <div class="icones">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="#">
+                        <li>
+                            Politica de Privacidade
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Termos e Condições
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Suporte
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="part2">
+            <h3>Receba Nossas Atualizações</h3>
+            <p class="acess">
+                Insira seu email e receba nossas atualizações promoções.
+            </p>
+            <label for="email">
+                Email:
+            </label>
+            <div class="subscribe">
+                <input type="email" placeholder="exemplo@mail.com">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="js/acessibilidade.js"></script>
+</body>
+
+</html>

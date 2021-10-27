@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.barAcess {
+    display: flex;
+    justify-content: end;
+    background-color: #0C4E8D;
+    align-items: center;
+    gap: 5px;
+}
+
+.barAcess img {
+    padding: 5px;
+    width: 30px;
+}
+
+.barAcess i {
+    font-size: 25px;
+    color: #EFF2F1;
+}
+
+
+.barMenu {
+    display: flex;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+#logoMobile {
+    display: none;
+}
+#box{
+    display: none;
+}
+#mobile-menu{
+    display: none;
+}
+
+.logo img {
+    width: 300px;
+}
+
+a {
+    color: #031926;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    font-weight: bold;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li:last-child {
+    margin-right: 25px;
+}
+
+#btnSolicite {
+    background-color: #031926;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+#btnSolicite:hover{
+    opacity: 0.5;
+
+}
+
+@media only screen and (max-width: 450px) {
+    .barMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    #logoDesk {
+        display: none;
+    }
+    #logoMobile {
+        display: block;
+        width: 200px;
+    }
+    .logo {
+        width: 100%;
+    }
+    #menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 72px;
+        right: 0px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+      #box{
+        display: block;
+    }
+    
+      #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      }
+      #mobile-menu {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+    #nav.active #menu{
+        display: block;
+        background-color: #ffffff;
+    }
+
+    #btnSolicite {
+        display: none;
+    }
+    nav ul li:last-child {
+        margin-right: 2px;
+    }
+
+    nav ul a li {
+        margin-left: 5px;
+        font-size: 15px;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 780px){
+.logo img {
+    width: 230px;
+}
+
+a {
+    font-size: 15px;
+}
+nav ul li {
+    margin-left: 5px;
+}
+
+nav ul li:last-child {
+    margin-right: 15px;
+}
+
+#btnSolicite {
+    font-size: 15px;
+    
+}
+}

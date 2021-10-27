@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #034D8C;
+    --bg-color: #EFF2F1;
+    --text-color: #444150;
+    --line-input: #D9D9D9;
+    --light-color: rgba(255, 255, 255, 0.04);
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font);
+    height: 100%
+}
+
+.body {
+
+    display: flex;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1079px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 70px 0;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 64px;
+}
+
+span {
+    font-size: 18px;
+}
+
+h2,
+h3,
+span {
+    margin-bottom: 25px;
+}
+
+.banner-Container {
+    display: flex;
+    background: var(--primary-color);
+    justify-content: space-evenly;
+    padding: 5%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 1079px;
+
+}
+
+.cardBanner {
+    background-color: var(--bg-color);
+    width: 27%;
+    padding: auto;
+    padding-top: 40px;
+    overflow: auto;
+}
+
+.cardBanner1 {
+    width: 27%;
+    background-color: #0A1A28;
+    color: var(--bg-color);
+    padding: auto;
+    padding-top: 40px;
+    overflow: auto;
+}
+
+.box-Container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1079px;
+}
+
+.boxItem {
+    display: flex;
+    width: 28%;
+    height: 300px;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    position: relative;
+}
+.boxImage{
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+.radio-Container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1079px;
+    gap: 8%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.radio-Container input {
+    width: 100%;
+}
+
+.inputs-Container {
+    width: 100%;
+    max-width: 1079px;
+    margin: 40px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    margin: 20px;
+    position: relative;
+}
+
+div.inputs {
+    margin: 15px;
+    position: relative;
+
+}
+
+input[type="text"],
+button,
+select {
+    font-family: var(--font);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--line-input);
+}
+
+select {
+    /* background-color: violet; */
+    background-image: url("../img/seta-suspensa_1.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - (10px));
+    background-position-y: center;
+}
+
+select:focus {
+    background: transparent;
+}
+
+button {
+    color: white;
+
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+}
+
+.btn-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 1Em;
+    margin-bottom: 2Em;
+}
+
+.NomePlano-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    max-width: 1079px;
+}
+
+.NomePlano-Container .inputs {
+    width: 100%;
+}
+
+.tabela-Container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.tabela-Container button {
+    align-self: flex-end;
+}
+
+#btn1:hover,
+#btn2:hover,
+#prosseguirBtn:hover {
+    font-weight: bold;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.12);
+    transform: rotate(0.01deg);
+}
+
+input~label {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    font-size: 18px;
+    color: var(--text-color);
+    transition: .5s;
+}
+
+select~label {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    font-size: 18px;
+    color: var(--text-color);
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    transform: translateY(-24px);
+    font-size: 0.7em;
+    letter-spacing: 0.1;
+}
+
+select:focus~label,
+select:valid~label {
+    transform: translateY(-24px);
+    font-size: 0.7em;
+    letter-spacing: 0.1;
+}
+
+table {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+
+table th {
+    background-color: #0A1A28;
+    color: var(--bg-color);
+}
+
+table th,
+td {
+
+    padding: 10px 10px;
+    text-align: left;
+
+}
+
+table td img {
+    width: 22px;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 18px;
+
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .cardBanner {
+        width: 50%;
+    }
+
+    .cardBanner1 {
+        width: 50%;
+    }
+
+    .boxItem {
+        width: 30%;
+        height: 150px;
+    }
+
+    .inputs-Container {
+        margin: 0 0;
+        padding: 0;
+    }
+
+    input[type="text"],
+    button,
+    select {
+        font-size: 0.8em;
+
+    }
+
+    .inputs label {
+        font-size: 0.7em;
+    }
+
+    .tabela-Container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .tabela-Container button {
+        align-self: flex-end;
+    }
+
+    table {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        border-collapse: collapse;
+        border: 1px solid #ccc;
+        width: 100%;
+
+    }
+
+    table th,
+    td {
+        font-size: 10px;
+        padding: 2px;
+        text-align: left;
+
+    }
+
+    table td img {
+        width: 22px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #prosseguirBtn {
+        margin: auto;
+    }
+}
