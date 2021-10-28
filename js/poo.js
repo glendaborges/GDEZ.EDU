@@ -67,7 +67,7 @@ class Pedido{
             let imgEdit = document.createElement("img");
 
             // atribuindo a esse elemento o caminho
-            imgEdit.src = "../img/editar.png";
+            imgEdit.src = "img/editar.png";
             
             //adicionando um filho para a primeira coluna
             td_acoes.appendChild(imgEdit);
@@ -76,7 +76,8 @@ class Pedido{
             let imgDelete = document.createElement("img");
 
             // atribuindo a esse elemento o caminho
-            imgDelete.src = "../img/delete.png";
+            imgDelete.src = "img/delete.png";
+          
 
             //adicionando um filho para a quarta coluna
             td_acoes.appendChild(imgDelete);
@@ -264,6 +265,6 @@ var pedido = new Pedido();
 
 //função executada ao clicar no botão prosseguir que levará à pag de formulário
 function abrirFormulario(){
-    let url = '../register.html';
+    let url = 'register.html';
     window.open(url, "_blank");
 }
