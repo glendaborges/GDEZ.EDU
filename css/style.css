@@ -337,18 +337,22 @@ footer {
     color: #DDDDDD;;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
+   
     .info {
         height: 80vh;
         padding: 30px;
+        background: white;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 25px;
+        width: 100%;
     }
 
     .info p {
         margin-top: 20px;
+        width: 80%;
     }
 
     #btnInfo {
@@ -356,7 +360,7 @@ footer {
     }
 
     .info2 {
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -380,7 +384,7 @@ footer {
         font-size: 15px;
         padding: 5px;
     }
-
+    
     #processo h2 {
         font-size: 20px;
     }
@@ -501,8 +505,12 @@ footer {
         width: 35%;
         font-size: 8px;
     }
+    .texto-card{
+        font-size: 12px;
+    }
 }
 @media (min-width: 680px) and (max-width: 780px){
+   
     h1 {
         font-size: 73px;
         width: 70%;
