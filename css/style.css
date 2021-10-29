@@ -91,7 +91,7 @@ h1 {
     font-size: 40px;
     line-height: 68px;
 }
-
+/* cards grid */
 .proCards {
     display: grid;
     grid-template-columns: repeat(3, 40vh);
@@ -152,6 +152,8 @@ h1 {
     margin-bottom: 15px;
     font-size: 40px;
 }
+
+/* card grid com as imagens */
 
 .sobreCards {
     display: grid;
