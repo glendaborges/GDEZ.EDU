@@ -13,8 +13,11 @@ function carrossel(){
     imgs.style.transform = `translateX(${-idx * 475}px)`
 }
 
+//Colocando o tempo entre uma foto e outra
 setInterval(carrossel, 4000);
 
+//************************************* Imagens do "Para te ajudar" ***************************************/
+//Imagem sobre a soma
 $(document).ready(function(){
 
     $("#inst1").click(function(){
@@ -26,8 +29,10 @@ $(document).ready(function(){
     })
 });
 
+//Imagem sobre a subtração
 $(document).ready(function(){
 
+    //Imagem maior para ampliar
     $("#inst2").click(function(){
         $("#inst2").attr('src', 'img/inst-menosBig.png');
         
@@ -37,8 +42,10 @@ $(document).ready(function(){
     })
 });
 
+//Imagem sobre a multiplicação
 $(document).ready(function(){
 
+     //Imagem maior para ampliar
     $("#inst3").click(function(){
         $("#inst3").attr('src', 'img/inst-vezesBig.png');
         
@@ -48,8 +55,10 @@ $(document).ready(function(){
     })
 });
 
+//Imagem sobre a divisão
 $(document).ready(function(){
 
+     //Imagem maior para ampliar
     $("#inst4").click(function(){
         $("#inst4").attr('src', 'img/inst-diviBig.png');
         
