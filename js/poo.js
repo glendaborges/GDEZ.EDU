@@ -237,7 +237,6 @@ class Pedido{
         document.getElementById("mensagem").value = dados.mensagem;
         //modificar o texto do botão "Salvar"
         document.getElementById("btn1").innerText = "Atualizar";
-
         this.testeBtn = dados.id;
     }
 

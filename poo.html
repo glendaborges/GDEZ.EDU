@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+    
+<!--  meta dados-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,19 @@
     <link href="css/poo.css" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+<!--   chama fontes, jquery, vlibras e arquivo de javascript   -->
     <script src="https://kit.fontawesome.com/7c5f2ab1cd.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script type="text/javascript" src="js/poo.js" async></script>
 </head>
-
+<!-- onload limpa os campos ao carregar a pagina -->
 <body onload="pedido.limpar()">
     <div class="barAcess">
         <img src="img/Group 8.svg" onclick="fonte('a')">
         <img src="img/Group 9.svg" onclick="fonte('d')">
     </div>
+<!--   header padrozinado de todo site   -->
     <header class="barMenu">
         <div id="mobile-menu">
             <i class="fas fa-bars"></i>
@@ -48,8 +51,10 @@
             <a href="poo.html"><input type="button" id="btnSolicite" value="Solicite sua box"></a>
         </nav>
     </header>
+<!--   começo do conteudo da pag de POO   -->
     <div class="body">
         <main>
+<!--       section de banner (com os cards dentro )       -->
             <section class="banner-Container">
                 <div class="cardBanner">
                     <h2>Trimestral</h3>
@@ -70,6 +75,7 @@
                     </h2>
                 </div>
             </section>
+<!--        section dos inputs para captura de dados para preenchimento da tabela de POO      -->
             <section>
                 <h1>
                     Selecione a box desejada:
@@ -120,12 +126,14 @@
                     <button id="btn2" onclick="pedido.limpar()">Limpar</button>
                 </div>
             </section>
+<!--   tabel para expor cada objeto(pedido) e seus atributos   -->
             <section class="tabela-Container">
                 <h2 class="center">
                     Lista de Pedidos
                 </h2>
                 <table border=1>
                     <thead>
+<!--             ID ESCONDIDO por não haver necessidade de mostrar pro usuário final. Campo continua ativo pois pode ser util para banco de dados.             -->
                         <!-- <th class="center">ID</th> -->
                         <th>Ações</th>
                         <th>Nome do Filho</th>
@@ -141,6 +149,7 @@
             </section>
         </main>
     </div>
+<!-- footer padrão de todas as páginas da solução -->
     <footer>
         <div class="part1">
             <h3>Experiências Incríveis e Criativas</h3>

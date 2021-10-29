@@ -213,6 +213,7 @@ button {
     transform: rotate(0.01deg);
 }
 
+/* estilização na label que é irmão do input */
 input~label {
     position: absolute;
     left: 0;
@@ -222,6 +223,7 @@ input~label {
     transition: .5s;
 }
 
+/* estilização na label que é irmão do input */
 select~label {
     position: absolute;
     left: 0;

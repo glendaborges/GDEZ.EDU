@@ -1,5 +1,7 @@
+// Importação da fonte que será utilizada ao lonngo do projeto 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+// Variáveis 
 :root {
     --primary-color: #034D8C;
     --bg-color: #EFF2F1;
@@ -9,6 +11,7 @@
     --font: 'Poppins', sans-serif;
 }
 
+// Atributos globais
 * {
     padding: 0;
     margin: 0;
@@ -51,6 +54,8 @@ h1 {
     font-weight: bold;
     color: #0583F2;
 }
+
+// Estilização do formulário
 
 form {
     background:white;
@@ -110,9 +115,6 @@ input, button {
 
 }
 
-/* input[type="date"] {
-    
-} */
 
 button {
     color: white;
