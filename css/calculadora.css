@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    margin-top: 25px;
+}
 main{
     display: flex; 
     font-family: 'Poppins', sans-serif;
@@ -12,11 +15,15 @@ main{
     justify-content: center;
     flex-direction: column; 
     min-height: 100vh;
-    gap: 20px;
+    gap: 2px;
     padding: 30px 0;
+    
 }
-
 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
     position: relative;
     margin: 100px auto;
     width: 550px; 
@@ -50,18 +57,19 @@ main{
     border: none;
     opacity: 0.6;
     color: #060150;
-    font-size: 40px;
+    font-size: 32px;
     text-align: right;
+    margin-top: -6px;
 }
 
 input[type="text" i]{
     outline: none;
 }
 
-img{
+button img{
     margin-top: 3px;
     border: none;
-    
+    margin-left: 3px;    
 }
 
 button{
@@ -91,6 +99,8 @@ button{
 
 h3{
     text-align: center;
+    margin-bottom: 19px;
+    margin-top: 20px;
 }
 
 .carrossel{

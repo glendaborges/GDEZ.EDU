@@ -17,11 +17,7 @@ $('#menu').append('<li id="box"> Solicite sua box </li>').css({
 menuMobile.addEventListener('click', toggleMenu);
 
 
-//*****SOBRE NÓS ******/
-// $('#card1').click(function(){
-//     $('.caixaTexto').show().fadeToggle()
-// })
-// $('#card1').append("<div class= 'caixaTexto'><h4>Glenda</h4><p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil porro quis labore tenetur harum dignissimos illum quaerat asperiores magnam commodi, excepturi est. Commodi ea et reiciendis dignissimos, impedit quidem quis!</p></div>")
+
 
 //*****ACESSIBILIDADE ******/
 
