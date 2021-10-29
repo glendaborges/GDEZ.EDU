@@ -39,10 +39,13 @@ $(function() {
         // se o value do #result for diferente de "nada", efetue a soma 
         if ($("#result").val() != '') {
             v1 = parseFloat($("#result").val());
+            // aqui torno o visor vazio quando pressionado o botão de operação
             $("#result").val('');
+            // declaro a var op para essa operação em específico
             op = "sub"
             $("#op").text($(this).val());
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -54,10 +57,13 @@ $(function() {
         // se o value do #result for diferente de "nada", efetue a soma 
         if ($("#result").val() != '') {
             v1 = parseFloat($("#result").val());
+            // aqui torno o visor vazio quando pressionado o botão de operação
             $("#result").val('');
+            // declaro a var op para essa operação em específico
             op = "mult"
             $("#op").text($(this).val());
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -69,10 +75,13 @@ $(function() {
         // se o value do #result for diferente de "nada", efetue a soma 
         if ($("#result").val() != '') {
             v1 = parseFloat($("#result").val());
+            // aqui torno o visor vazio quando pressionado o botão de operação
             $("#result").val('');
+            // declaro a var op para essa operação em específico
             op = "divi"
             $("#op").text($(this).val());
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -93,6 +102,7 @@ $(function() {
                 $("#result").val(Math.sqrt(v1));
             }
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -112,6 +122,7 @@ $(function() {
                 $("#result").val(Math.cbrt(v1));
             }
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -131,6 +142,7 @@ $(function() {
                 $("#result").val(Math.pow(v1, 2));
             }
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -150,6 +162,7 @@ $(function() {
                 $("#result").val(Math.pow(v1, 3));
             }
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar a operação')
         }
@@ -182,6 +195,7 @@ $(function() {
                 $("#result").val(v1 / v2);
             }
 
+            // se nenhum número tiver sido digitado quando clicarem na operação, alert:
         } else {
             alert('Insira um valor para efetuar o calculo')
         }
@@ -201,12 +215,13 @@ $(function() {
         $("#result").val(valor);
     });
 
-    // Por causa do tamanho do container 
+    
     $(".tog").hide();
 
     $("button[name=cient]").click(function() {
         $(".tog").toggle()
 
+        // Por causa da disposição dos botões, aqui edito o tamanho do container para quando a científica esitver vísivel ou não
         if ($(".tog").is(":visible")) {
             $(".container").css({
                 width: "630px"
