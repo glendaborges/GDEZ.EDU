@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!-- Header && Navbar -->
     <div class="barAcess">
         <img src="img/Group 8.svg" onclick="fonte('a')">
         <img src="img/Group 9.svg" onclick="fonte('d')">
@@ -54,7 +55,9 @@
     <!-- espaço para o head -->
     <div class="body">
         <main class="container">
+            <!-- Formulário  de Cadastro -->
             <form onsubmit="return false;">
+                <!-- Foi utilizado a função onsubmit="return false;" para que a página não fosse carrregada, assim poderíamos mostrar o ModalPopUp -->
                 <img src="img/Hello-rafiki.svg" class="img-responsive">
                 <div class="title">
                     <h1>Bem-vindo(a) à GDEZ.EDU!</h1>
@@ -125,6 +128,7 @@
                 </div>
 
             </form>
+            <!-- O ModalPopUp Será mostrado quando o usuário preencher as informações e clicar no button submit -->
             <div id="modal-promocao" class="modal-container">
                 <!--início do popup-->
                 <div class="modal-content">
@@ -192,7 +196,7 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-
+    <!-- Scripts -->
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
@@ -201,7 +205,6 @@
     <script type="text/javascript" src="js/registration-script.js"></script>
 
     <!-- script da API - validaCEP -->
-    <!-- <script type="text/javascript" src="cep-validation.js" tar></script> -->
+    <script type="text/javascript" src="cep-validation.js" tar></script>
 </body>
-
 </html>
